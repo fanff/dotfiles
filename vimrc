@@ -76,9 +76,6 @@ let g:airline#extensions#syntastic#enabled = 1
 " Turn on line numbering. Turn it off with "set nonu" 
 " set number
 
-" Set syntax on
-syntax on
-
 " Case insensitive search
 " set ic
 
