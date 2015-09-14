@@ -11,7 +11,7 @@ call vundle#begin()
 "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
+Plugin 'bundle/Vundle.vim'
 Plugin 'SuperTab'
 " Plugin 'Conque-Shell'
 Plugin 'scrooloose/nerdtree'
@@ -22,14 +22,15 @@ Plugin 'fugitive.vim'
 Plugin 'bling/vim-airline'
 Plugin 'scrooloose/syntastic'
 
+Plugin 'altercation/vim-colors-solarized'
+
+
 " Plugin 'Valloric/YouCompleteMe'
 " Plugin 'Word-Fuzzy-Completion'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
 "
 " Brief help
 " :PluginList       - lists configured plugins
@@ -39,6 +40,23 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+
+
+
+" Set syntax on
+syntax on
+
+" force 256 color
+set t_Co=256
+
+" solarize
+set background=dark
+let g:solarized_termcolors=256
+" let g:solarized_contrast  =   "normal"|   "high" or "low"
+" let g:solarized_visibility=   "normal"|   "high" or "low"
+let g:solarized_contrast  =   "high"
+let g:solarized_visibility=   "high"
+colorscheme solarized
 
 
 "let g:airline_theme='luna'
