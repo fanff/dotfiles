@@ -1,0 +1,8 @@
+
+bind-key y resize-pane -R 3
+bind-key t resize-pane -L 3
+
+bind-key u resize-pane -D 3
+bind-key i resize-pane -U 3
+
+
