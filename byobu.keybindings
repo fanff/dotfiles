@@ -1,4 +1,6 @@
 
+source $BYOBU_PREFIX/share/byobu/keybindings/common
+
 bind-key y resize-pane -R 3
 bind-key t resize-pane -L 3
 
